@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>M. Bala Sahithi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        section h2 {
+            margin-bottom: 10px;
+            color: #4CAF50;
+        }
+        #about ul {
+            list-style: disc inside;
+            margin-bottom: 20px;
+        }
+        .project {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form label {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        form input, form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form input[type="submit"] {
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 15px;
+            font-size: 16px;
+        }
+        form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>M. Bala Sahithi</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Home Section (Optional) -->
+    <section id="home">
+        <!-- You can add a welcome message or a banner image here -->
+    </section>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>Hello! I'm Sahithi, currently I'm doing my batchelors in Vignan University. I come from Narasaraopet town of Palanadu district. My hobbies are dancing, drawing, painting. I'm passionate about becoming a Software Engineer.</p>
+
+        <h3>Educational Background</h3>
+        <ul>
+            <li>Bachelor of Technology in Computer Science, VFSTR University</li>
+            <li>Intermediate, Oxford Vit jr college</li>
+            <li>SSC, Oxford Concept School</li>
+        </ul>
+        <h3>Professional Interests</h3>
+        <ul>
+            <li>Web Development</li>
+            <li>Social media marketing</li>
+            <li>Traveling</li>
+        </ul>
+        <h3>Technical Skills</h3>
+        <table>
+            <tr>
+                <th>Skill</th>
+                <th>Proficiency</th>
+            </tr>
+            <tr>
+                <td>HTML/CSS</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Basic</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>Intermediate</td>
+            </tr>
+        </table>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Project One: Knee Osteoarthritis Prediction</h3>
+            <p>A project to detect whether the knee is effected by osteoarthritis or not through x-ray images. Built with Deep Learning.</p>
+            <img src="project1.png" alt="Screenshot of Predicted image">
+            <a href="C:\Users\balas\OneDrive\idp .docx" target="_blank"></a>
+        </div>
+        <div class="project">
+            <h3>Project Two: Face Expression Detection</h3>
+            <p>This is also developed using deep learning techniques to dectect the face expressions of a person through images.</p>
+            <a href="https://colab.research.google.com/drive/1VfyLlvlt2NCR1aKtL7rB6T2grklbEuYh" target="_blank">Link for project</a>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="mailto:balasahithi7@gmail.com.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p><a href="mailto:balasahithi7@gmail.com">balasahithi7@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
